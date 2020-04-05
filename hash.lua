@@ -17,7 +17,6 @@ function hash.hashn(...)
 	local f = 1
 	local v = {...}
 	local n = #v
-	local ITER = 0
 	for i = 1, n do
 		local s = 0
 		for i = 1, i do
