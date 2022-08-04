@@ -1,18 +1,18 @@
-local hash = {}
+local shash = {}
 
-function hash.hash1(x)--lol
+function shash.shash1(x) -- lol
 	return x
 end
 
-function hash.hash2(x, y)
+function shash.shash2(x, y)
 	return x + (x + y)*(x + y + 1)/2
 end
 
-function hash.hash3(x, y, z)
+function shash.shash3(x, y, z)
 	return x + (x + y)*(x + y + 1)/2 + (x + y + z)*(x + y + z + 1)*(x + y + z + 2)/6
 end
 
-function hash.hashn(...)
+function shash.shashn(...)
 	local r = 0
 	local f = 1
 	local v = {...}
@@ -32,4 +32,4 @@ function hash.hashn(...)
 	return r
 end
 
-return hash
+return shash
